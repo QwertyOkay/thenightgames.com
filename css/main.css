@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import './layout/modal'; */ /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -310,7 +311,7 @@ html, body {
 }
 
 .container {
-  background: #ededed;
+  background: rgba(237, 237, 237, 0.3803921569);
   padding: 2em;
   min-height: 100vh;
   display: flex;
@@ -393,7 +394,7 @@ html, body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 65%);
+  background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 45%);
 }
 
 .card__category {
@@ -413,7 +414,7 @@ html, body {
 }
 
 .card__duration {
-  color: #6f7070;
+  color: #1f1f1f;
   font-weight: 600;
 }
 
@@ -518,4 +519,104 @@ html, body {
   font-size: 18px;
   font-weight: 600;
   color: #2e5f80;
-}/*# sourceMappingURL=main.css.map */
+}
+
+body {
+  height: 800px;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  width: 99%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 120px;
+  height: 120px;
+  background: #333;
+  color: #f9f9f9;
+  font-family: Arial;
+  text-shadow: 1px -1px #000;
+  /*animação*/
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header.sticky {
+  position: fixed;
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  width: 99%;
+  background: #111;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.hero-h1 {
+  position: absolute;
+  z-index: 9999;
+  top: 20%;
+  font-weight: 600;
+  left: 5%;
+  color: #FFF;
+}
+
+/* @import "compass/css3"; */
+/* body, html {
+  height: 100%;
+  background: #fff;
+} */
+.container2 {
+  width: 200px;
+  height: 100%;
+  margin: 0 auto 0;
+  /*  -webkit-perspective: 1000;
+   -webkit-backface-visibility: hidden; */
+  background: transparent;
+}
+
+.pulse-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 1.3em;
+  font-weight: light;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #838589;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+  position: absolute;
+  top: 90%;
+  animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  animation: none;
+}
+
+/* @keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}  *//*# sourceMappingURL=main.css.map */

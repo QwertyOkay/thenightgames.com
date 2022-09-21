@@ -28,9 +28,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+ <!--  <link rel="stylesheet" href="https://codepen.io/kjbrum/pen/myyZLq.scss"> -->
 </head>
 
-<body>
+<body style="background-image: url(img/bg.avif); background-size: cover;">
+
+  <header>
+    <h1><img src="img/logo.png" alt="HeaderLogo"></h1>
+  </header>
  
   <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -42,7 +47,8 @@
   </svg>
   
   <div class="page" data-modal-state="closed">
-    <div class="container">
+    <h1 class="hero-h1">best sellers</h1>
+    <div class="container" >
       <div class="card-slider">
         
         <a class="link-card" href="1.html">
@@ -244,38 +250,25 @@
                             </article></div>
                           </noindex>
                           </a>
-
       </div>
     </div>
-    <div class="overlay"></div>
-    <div class="modal-wrapper">
-      <div class="modal">
-        <button class="modal__close-button" type="button">
-          <svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg>
-        </button>
-        <div class="modal__scroll-area">
-          <header class="modal__header">
-            <div class="card__background">
-              <img src="https://source.unsplash.com/random">
-            </div>
-            <div class="card__category">
-              consulta
-            </div>
-            <h1 class="card__title">Asesoría Angelical</h1>
-            <div class="card__duration">
-              Duración: 3 horas
-            </div>
-          </header>
-          <main class="modal__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
-          </main>
-        </div>
-      </div>
-    </div>
-  </div>
 
+    <div class='container2'>
+      <a href="items.html">
+      <span class='pulse-button'>More</span>
+    </a>
+    </div>
+
+  <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1){  
+          $('header').addClass("sticky");
+        }
+        else{
+          $('header').removeClass("sticky");
+        }
+      });
+  </script>
   <script>
     jQuery('.card-slider').slick({
   slidesToShow:3,
@@ -380,6 +373,7 @@ closeButton.addEventListener('click',(e)=>{
   };
 });
   </script>
+
   
 </body>
 
