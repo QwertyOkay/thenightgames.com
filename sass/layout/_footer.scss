@@ -1,0 +1,32 @@
+.footer {
+	position: absolute;
+	/* right: 10px; */
+	/* bottom: 10px; */
+    width: 100%;
+	/* font-family: 'Montserrat', sans-serif; */
+    justify-content: space-around;
+	/* padding: 40px; */
+	display: flex;
+	 a {
+		margin: 0 10px;
+		color: #fff;
+		font-size: 1.8rem;
+		backface-visibility: hidden;
+		transition: all 150ms ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.footer__ul {
+    display: flex; 
+    list-style: none; 
+    justify-content: space-between;
+}
+
+.footer__marg-r {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
