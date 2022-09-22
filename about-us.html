@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html
+  class="modernizr-js page modernizr-no-touchevents modernizr-cssanimations modernizr-csstransitions modernizr-webp modernizr-webp-alpha modernizr-webp-animation modernizr-webp-lossless"
+  lang="en">
+
+<head>
+  <title>The Night Games - Shop</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" media="all" href="./css/main.min.css">
+  <link rel="stylesheet" href="http://compass-style.org/reference/compass/css3/">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ <style>
+    html,
+body {
+   height: 100%;
+   background-color: #333;
+   color: white;
+}
+
+ul {
+      transition: all 0s;
+      position: relative;
+      left: 0;
+      z-index: 2;
+   }
+
+      .row {
+   padding-top:150px;
+}
+h1 {
+   font-size: 3em;
+}
+h3 {
+   color:#999;
+}
+p {
+   line-height: 160%;
+   letter-spacing:1px;
+}
+
+ </style>
+</head>
+
+<body style="background-image: url(img/bg.avif); background-size: cover;">
+
+  <header style="width: 100%;">
+    <a href="/">
+    <h1><img src="img/logo.png" style="vertical-align: baseline;"
+        alt="HeaderLogo"></h1>
+  </a>
+  </header>
+ 
+ <div class="container">
+    <div class="row">
+       <div class="col-sm-10 col-sm-push-1 col-md-8 col-md-push-2">
+          <h1>Full Screen Burger Menu</h1>
+          <h3>Click the burger.</h3>
+          <p>Lucas ipsum dolor sit amet darth lando qui-gonn mara droid jade qui-gonn skywalker wedge lars. Ben antilles chewbacca palpatine mothma fisto binks mara. Wicket greedo c-3p0 han lars mara darth. Darth binks wookiee mara luuke amidala. Lando kessel jango wicket. Moff jango dantooine luuke skywalker obi-wan. Darth mandalore binks leia solo moff yoda. Darth c-3p0 maul ben jar lando. Jabba ahsoka grievous mandalorians kenobi wookiee chewbacca. Binks calrissian tatooine baba jango k-3po darth calamari yavin.</p>
+          <p>
+             Wicket sidious organa skywalker mandalore mon qui-gonn fisto. Leia grievous biggs bespin calamari. Alderaan luuke darth hutt. Vader leia boba kashyyyk dagobah jade kashyyyk. Lars amidala gonk lobot organa. Twi'lek darth gamorrean obi-wan boba moff. Yavin c-3p0 darth darth luke chewbacca han. Skywalker dooku c-3po owen. Leia jade alderaan jar dooku utapau tusken raider dantooine jawa. Anakin leia kessel jango bespin lando organa tatooine tusken raider. Mara ackbar mara calamari hutt qui-gonn dantooine.
+          </p>
+          <p>
+             Yoda sidious lando padmé chewbacca fett. Maul calrissian boba lobot jade darth obi-wan. Wookiee darth ahsoka dagobah darth sidious naboo lars. Dooku skywalker skywalker ben luke windu. Wicket darth coruscant darth coruscant organa palpatine yoda padmé. Darth leia organa gonk lando mon mara hutt. Wookiee darth padmé windu hutt. Darth cade maul padmé grievous greedo moff dooku solo. Coruscant twi'lek dooku moff skywalker.
+          </p>
+       </div>
+    </div>
+ </div>
+
+    <div class="footer">
+      <ul class="footer__ul">
+        <a href="about-us.html"><li class="footer__marg-r">About Us</li></a>
+        <a href="contact-us.html"><li class="footer__marg-r">Contact Us</li></a>
+        <a href="privacy-policy.html"><li class="footer__marg-r">Privacy Policy</li></a>
+        <a href="return.html"><li class="footer__marg-r">Return</li></a>
+        <a href="terms.html"><li class="footer__marg-r">Terms</li></a>
+      </ul>
+      </div>
+      <div class="reserved" style="align-items: baseline!important;">
+        <p >ALL RIGHTS RESERVED &copy; <a style="color: #000;"
+            href="about.html"> The Night Games 2022 </a></p>
+       </div>
+
+
+       <script>
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 1){  
+              $('header').addClass("sticky");
+            }
+            else{
+              $('header').removeClass("sticky");
+            }
+          });
+      </script>
+</body>
+
+</html>
