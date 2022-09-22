@@ -28,8 +28,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
- --></head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
 
 <body style="background-image: linear-gradient(100deg, rgb(63 63 63 / 68%) 100%, rgba(255, 255, 255, 0) 75%), url(img/bg.avif);
 background-size: contain;
@@ -1148,9 +1149,24 @@ gap: 30px;">
 </div>
   
   
+<div class="container3">
+	<div class="row justify-content-center text-center">
+		<!-- <div class="col-8 my-5">
+			<p class="h5">Hello!</p>
+			<img src="http://via.placeholder.com/900x300" class="img-fluid rounded mb-3" alt="">
+			<img src="http://via.placeholder.com/900x300" class="img-fluid rounded mb-3" alt="">
+			<img src="http://via.placeholder.com/900x300" class="img-fluid rounded mb-3" alt="">
+			<img src="http://via.placeholder.com/900x300" class="img-fluid rounded alt="">			
+		</div> -->
+	</div>
+</div>
+<a id="back-to-top" href="#" 
+class="btn btn-light btn-lg back-to-top"
+style="border-radius: 7.299999999999997rem; background-color: #fff;" 
+role="button"><i class="fas fa-chevron-up"></i></a>
 
 
-   <!--  <div class="footer">
+   <!-- <div class="footer">
       <ul class="footer__ul">
         <a href="about-us.html"><li class="footer__marg-r">About Us</li></a>
         <a href="contact-us.html"><li class="footer__marg-r">Contact Us</li></a>
@@ -1168,6 +1184,28 @@ gap: 30px;">
           $('header').removeClass("sticky");
         }
       });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
   </script>
 
   

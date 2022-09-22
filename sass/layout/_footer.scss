@@ -1,5 +1,5 @@
 .footer {
-	position: absolute;
+	/* position: absolute; */
 	/* right: 10px; */
 	/* bottom: 10px; */
     width: 100%;
@@ -29,4 +29,15 @@
     margin-right: 10px;
     font-weight: 600;
     font-size: 20px;
+}
+
+
+.reserved { 
+	display: flex;
+    justify-content: center;
+    background: #fff;
+    height: 26px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
 }

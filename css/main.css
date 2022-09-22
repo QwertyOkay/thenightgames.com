@@ -521,10 +521,9 @@ html, body {
   color: #2e5f80;
 }
 
-body {
-  height: 800px;
-}
-
+/* body {
+   height: 800px;
+ } */
 header {
   z-index: 999;
   position: absolute;
@@ -633,7 +632,7 @@ header.sticky {
 }
 
 .footer {
-  position: absolute;
+  /* position: absolute; */
   /* right: 10px; */
   /* bottom: 10px; */
   width: 100%;
@@ -663,6 +662,16 @@ header.sticky {
   margin-right: 10px;
   font-weight: 600;
   font-size: 20px;
+}
+
+.reserved {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  height: 26px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 * {
@@ -827,4 +836,11 @@ header.sticky {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }/*# sourceMappingURL=main.css.map */
