@@ -572,6 +572,29 @@ header.sticky {
   }
 }
 
+.bg-body {
+  background-image: linear-gradient(100deg, rgba(63, 63, 63, 0.68) 100%, rgba(255, 255, 255, 0) 75%), url(../../img/bg.avif);
+  background-size: cover;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .bg-body {
+    background-image: linear-gradient(100deg, rgba(63, 63, 63, 0.68) 100%, rgba(255, 255, 255, 0) 75%), url(../../img/bg.avif);
+    background-size: contain;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 /* @import "compass/css3"; */
 /* body, html {
   height: 100%;
