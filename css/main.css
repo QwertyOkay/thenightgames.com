@@ -656,6 +656,7 @@ header.sticky {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  width: initial;
 }
 
 .footer__marg-r {
