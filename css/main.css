@@ -981,7 +981,7 @@ a {
 }
 
 .form {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(51, 51, 51, 0.89);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -1026,6 +1026,7 @@ h1 {
   color: #ffffff;
   font-weight: 300;
   margin: 0 0 40px;
+  letter-spacing: inherit;
 }
 
 label {
@@ -1039,7 +1040,7 @@ label {
 }
 label .req {
   margin: 2px;
-  color: #1ab188;
+  color: #8dc872;
 }
 
 label.active {
@@ -1070,7 +1071,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #1ab188;
+  border-color: #626366;
 }
 
 textarea {
@@ -1105,8 +1106,8 @@ textarea {
   font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  background: #488669;
+  letter-spacing: inherit;
+  background: #626366;
   color: #ffffff;
   /* transition:all.5s ease; */
   -webkit-appearance: none;

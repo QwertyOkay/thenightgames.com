@@ -28,13 +28,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
  <style>
     html,
 body {
-   height: 100%;
-   background-color: #333;
+  /*  height: 100%;
+   background-color: #333; */
    color: white;
    font-family: "Poppins",sans-serif;
 }
@@ -66,52 +65,37 @@ p {
 
 <body style="background-image: url(img/bg.avif); background-size: cover;">
 
-  <header style="width: 100%;">
+  <header style="width: 100%;top: 0;left:0;">
     <a href="/">
     <h1><img src="img/logo.png" style="vertical-align: baseline;"
         alt="HeaderLogo"></h1>
   </a>
   </header>
  
- <div class="container">
-    <section class="sky" style="background: #f9e3a8b0;">
-        <div class="form" style="margin-top: 6px;
-        margin-bottom: 6px;">
+ <div class="container4">
+    <section class="sky">
+        <div class="form" style="margin-top: 11em;margin-bottom: 6px;">
           
           <div class="tab-content">
             <div id="signup">   
-              <h1>Contact us</h1>
+              <h1 style="font-weight: 600;">Contact us</h1>
               
-              <form>
+              <form> 
               
-              <div class="top-row">
-                <div class="field-wrap">
-                  <label>
-                    First Name<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off" />
-                </div>
-            
-                <div class="field-wrap">
-                  <label>
-                    Last Name<span class="req">*</span>
-                  </label>
-                  <input type="text"required autocomplete="off"/>
-                </div>
-              </div>
     
               <div class="field-wrap">
                 <label>
-                  Email Address<span class="req">*</span>
+                  Email<span class="req">*</span>
                 </label>
-                <input type="email"required autocomplete="off"/>
+                <input type="email" required autocomplete="on"/>
               </div>
               
               <div class="field-wrap">
                 <label>
                   Text<span class="req">*</span>
                 </label>
-                <input type="text"required/>
+                <input style="height: 97px;"
+                 type="text"required/>
               </div>
               
               <button type="submit" class="button button-block">Submit</button>
@@ -141,7 +125,7 @@ p {
               
               <p class="forgot"><a href="#">Forgot Password?</a></p>
               
-              <button class="button button-block"/>Log In</button>
+              <button class="button button-block">Log In</button>
               
               </form>
     
@@ -153,7 +137,7 @@ p {
         </section>
  </div>
 
-    <div class="footer">
+    <div class="footer" style="position: absolute;bottom: 3%;">
       <ul class="footer__ul">
         <a href="about-us.html"><li class="footer__marg-r">About Us</li></a>
         <a href="contact-us.html"><li class="footer__marg-r">Contact Us</li></a>
@@ -162,7 +146,9 @@ p {
         <a href="terms.html"><li class="footer__marg-r">Terms</li></a>
       </ul>
       </div>
-      <div class="reserved" style="align-items: baseline!important;">
+      <div class="reserved" style="align-items: baseline!important;position: absolute;bottom: 0;left: 0;width: 100%;
+      display: flex;
+      justify-content: center;">
         <p style="color: #000; font-size: 14px;">ALL RIGHTS RESERVED &copy; <a style="color: #000; font-size: 14px;"
             href="about.html"> The Night Games 2022 </a></p>
        </div>
