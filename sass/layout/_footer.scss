@@ -27,9 +27,14 @@
 }
 
 .footer__marg-r {
+	margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+	@media screen and (min-width: 1200px) {
     margin-right: 10px;
     font-weight: 600;
     font-size: 20px;
+	}
 }
 
 
