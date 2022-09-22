@@ -38,6 +38,14 @@
     z-index: 9999;
     top: 20%;
     font-weight: 600;
-    left: 5%;
+    left: 30%;
+    color: #FFF;
+    @media screen and (min-width: 1200px) {
+    position: absolute;
+    z-index: 9999;
+    top: 20%;
+    font-weight: 600;
+    left: 44%;
     color: #FFF;
   }
+}

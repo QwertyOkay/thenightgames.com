@@ -558,8 +558,18 @@ header.sticky {
   z-index: 9999;
   top: 20%;
   font-weight: 600;
-  left: 5%;
+  left: 30%;
   color: #FFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero-h1 {
+    position: absolute;
+    z-index: 9999;
+    top: 20%;
+    font-weight: 600;
+    left: 44%;
+    color: #FFF;
+  }
 }
 
 /* @import "compass/css3"; */
@@ -632,14 +642,15 @@ header.sticky {
 }
 
 .footer {
-  /* position: absolute; */
-  /* right: 10px; */
-  /* bottom: 10px; */
   width: 100%;
-  /* font-family: 'Montserrat', sans-serif; */
-  justify-content: space-around;
-  /* padding: 40px; */
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+  }
 }
 .footer a {
   margin: 0 10px;
