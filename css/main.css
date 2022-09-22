@@ -946,4 +946,11 @@ header.sticky {
   transition: all 0s;
   position: fixed;
   left: -9000px;
+}
+
+.about-h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: inherit;
 }/*# sourceMappingURL=main.css.map */
