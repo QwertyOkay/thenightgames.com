@@ -667,6 +667,7 @@ header.sticky {
 .footer {
   width: 100%;
   display: flex;
+  margin-top: 1em;
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -695,6 +696,7 @@ header.sticky {
 
 .footer__marg-r {
   margin-right: 10px;
+  margin-top: 10px;
   font-weight: 600;
   font-size: 14px;
 }
