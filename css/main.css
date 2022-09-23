@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* @import './layout/modal'; */ /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -317,6 +316,11 @@ html, body {
   display: flex;
 }
 
+.container9 {
+  padding: 2em;
+  display: flex;
+}
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -527,7 +531,7 @@ html, body {
 header {
   z-index: 999;
   position: absolute;
-  width: 99%;
+  width: 96.2%;
   text-align: center;
   font-size: 32px;
   line-height: 120px;
@@ -536,10 +540,27 @@ header {
   color: #f9f9f9;
   font-family: Arial;
   text-shadow: 1px -1px #000;
-  /*animação*/
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (min-width: 1200px) {
+  header {
+    z-index: 999;
+    position: absolute;
+    width: 99%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 120px;
+    height: 120px;
+    background: #333;
+    color: #f9f9f9;
+    font-family: Arial;
+    text-shadow: 1px -1px #000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
 }
 
 header.sticky {
@@ -1127,4 +1148,283 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes small {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 2rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes big {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -3rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.product {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 90%;
+  z-index: 2;
+  padding: 2rem 2rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .product {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    padding: 2rem 2rem;
+    flex-direction: row;
+  }
+}
+.product-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.product-photo img:first-child {
+  width: 34%;
+  height: auto;
+  margin-top: 30%;
+}
+@media screen and (min-width: 1200px) {
+  .product-photo img:first-child {
+    width: 34%;
+    height: auto;
+    margin-top: 0px;
+  }
+}
+.product-photo img:last-child {
+  width: 70%;
+  height: atuo;
+}
+@media screen and (min-width: 1200px) {
+  .product-photo img:last-child {
+    width: 70%;
+    height: atuo;
+    margin-left: -13rem;
+  }
+}
+.product-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0 5%;
+}
+@media screen and (min-width: 1200px) {
+  .product-detail {
+    width: 48%;
+    margin-left: -9rem;
+  }
+}
+.product__title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+.product__price {
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-size: x-large;
+}
+.product__subtitle {
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: #B9B8B6;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+}
+.product__color form {
+  display: flex;
+}
+.product__color form fieldset {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.product__color form fieldset label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 0;
+  line-height: 1.6rem;
+}
+.product__color form fieldset label i {
+  opacity: 0;
+  transition: 0.32s;
+}
+.product__color form fieldset input {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.product__color form fieldset input:checked + label i {
+  opacity: 1;
+}
+.product__color form fieldset:first-child {
+  margin-right: 1rem;
+}
+.product__color form fieldset:first-child label {
+  background: #B9B8B6;
+}
+.product__color form fieldset:first-child label i {
+  color: #513F35;
+}
+.product__color form fieldset:last-child label {
+  background: #513F35;
+}
+.product__color form fieldset:last-child label i {
+  color: #B9B8B6;
+}
+.product__button {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #F1EDE4;
+  display: block;
+  width: 8rem;
+  height: 2rem;
+  font-size: 0.75rem;
+  color: #513F35;
+  transition: 0.32s;
+}
+.product__button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2rem;
+  transition: 0.32s;
+}
+.product__button span:last-child {
+  top: -4rem;
+  transition-delay: 0.32s;
+  color: #fff;
+}
+.product__button--success {
+  background: #00ff7f;
+}
+.product__button--success span:last-child {
+  top: 0;
+}
+.product__button--success span:first-child {
+  top: -4rem;
+}
+
+.logo-abs {
+  position: absolute;
+  top: -152%;
+  left: 4%;
+}
+
+.itms-color {
+  color: #000;
+}
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  transition-property: opacity, visibility;
+  background-color: rgba(0, 0, 0, 0.62);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__backdrop.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%) scale(2.9);
+  opacity: 0;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #1e0013;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  background-color: #eeeeee;
+  opacity: 1;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition-property: opacity, transform;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.modal__hero-text {
+  color: #000;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

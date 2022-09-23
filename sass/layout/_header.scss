@@ -5,6 +5,21 @@
   header {
     z-index: 999;
     position: absolute;
+    width: 96.2%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 120px;
+    height: 120px;
+    background: #333;
+    color: #f9f9f9;
+    font-family:Arial;
+    text-shadow:1px -1px #000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    @media screen and (min-width: 1200px) {
+      z-index: 999;
+    position: absolute;
     width: 99%;
     text-align: center;
     font-size: 32px;
@@ -14,11 +29,10 @@
     color: #f9f9f9;
     font-family:Arial;
     text-shadow:1px -1px #000;
-  
-    /*animação*/
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    }
   }
   
   header.sticky {
