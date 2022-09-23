@@ -685,6 +685,7 @@ header.sticky {
 }
 .footer a:hover {
   transform: scale(1.1);
+  color: #bc0035;
 }
 
 .footer__ul {
