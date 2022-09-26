@@ -1363,6 +1363,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .padding-10 {
+    padding: 0px 125px;
+  }
+}
+
 .modal__backdrop {
   position: fixed;
   top: 0;
