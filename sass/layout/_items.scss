@@ -241,3 +241,9 @@ $background-color: #F9F9F9;
 .itms-color {
     color: #000;
 }
+
+.padding-9 {
+   @media screen and (min-width: 1200px) {
+    padding: 0px 60px;
+   }
+}

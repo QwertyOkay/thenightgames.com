@@ -1357,6 +1357,12 @@ textarea {
   color: #000;
 }
 
+@media screen and (min-width: 1200px) {
+  .padding-9 {
+    padding: 0px 60px;
+  }
+}
+
 .modal__backdrop {
   position: fixed;
   top: 0;
